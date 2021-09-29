@@ -26,44 +26,52 @@ function logAtMost10(n) {
 // Time Complexity: O(1)
 
 function onlyElementsAtEvenIndex(array) {
-  let newArray = [];
+  let newArray = []; // 1
   for (let i = 0; i < array.length; i++) {
+    // n
     if (i % 2 === 0) {
-      newArray.push(array[i]);
+      // 1
+      newArray.push(array[i]); // 1
     }
   }
-  return newArray;
+  return newArray; // 1
 }
-// Time Complexity:
+// Time Complexity: O(n)
 
 function subtotals(array) {
-  let subtotalArray = [];
+  let subtotalArray = []; // 1
   for (let i = 0; i < array.length; i++) {
-    let subtotal = 0;
+    // n
+    let subtotal = 0; // 1
     for (let j = 0; j <= i; j++) {
-      subtotal += array[j];
+      //n
+      subtotal += array[j]; // 1
     }
-    subtotalArray.push(subtotal);
+    subtotalArray.push(subtotal); // 1
   }
-  return subtotalArray;
+  return subtotalArray; // 1
 }
-// Time Complexity:
+// Time Complexity: O(n^2)
 
 function vowelCount(str) {
-  let vowelCount = {};
-  const vowels = "aeiouAEIOU";
+  let vowelCount = {}; // 1
+  const vowels = "aeiouAEIOU"; // 1
 
   for (let char of str) {
+    // 1
     if (vowels.includes(char)) {
+      // n
       if (char in vowelCount) {
-        vowelCount[char] += 1;
+        // 1
+        vowelCount[char] += 1; // 1
       } else {
-        vowelCount[char] = 1;
+        // 1
+        vowelCount[char] = 1; // 1
       }
     }
   }
 
-  return vowelCount;
+  return vowelCount; // 1
 }
 
-// Time Complexity:
+// Time Complexity: O(n)
